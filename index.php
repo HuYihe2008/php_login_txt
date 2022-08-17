@@ -23,7 +23,7 @@
                 <input onkeyup="this.value=this.value.replace(/[, ]/g,'')" type="password" placeholder="密码" name="pwd_log"/>
                 <input onkeyup="this.value=this.value.replace(/[, ]/g,'')" type="number" placeholder="权限" name="level_log" min="1" max="12"/>
                 <input type="hidden" name="name"/>
-                <div class="g-recaptcha" data-sitekey="6LeZ-G0eAAAAAILOGZvW2DWFXCVuRW9K2HaSQtKn" data-theme="dark"></div>
+                <!--<div class="g-recaptcha" data-sitekey="6LeZ-G0eAAAAAILOGZvW2DWFXCVuRW9K2HaSQtKn" data-theme="dark"></div>-->
                 <button onclick="submit_log()">查询</button>
             </form>
             <!-- 注册 -->
@@ -34,19 +34,19 @@
                 <input onkeyup="this.value=this.value.replace(/[, ]/g,'')" type="password" placeholder="密码" name="pwd"/>
                 <!--input type="number" placeholder="权限" name="level"/-->
                 <input type="hidden" name="name"/>
-                <div class="g-recaptcha" data-sitekey="6LeZ-G0eAAAAAILOGZvW2DWFXCVuRW9K2HaSQtKn" data-theme="dark"></div>    
+                <!--<div class="g-recaptcha" data-sitekey="6LeZ-G0eAAAAAILOGZvW2DWFXCVuRW9K2HaSQtKn" data-theme="dark"></div> -->   
                 <button onclick="submit_reg()">注册</button>                
             </form>
         </div>
         <div class="con-box left">
-            <h3><span>云端航行模拟飞行交流社区</span></h3>  
+            <h3><span>标题1</span></h3>  
             <p>快来领取你的<span>账号</span>吧</p>          
             <img src="./images/1.png" alt="">
             <p>已有账号？</p>
             <button id="login">去登录</button>
         </div>
         <div class="con-box right">
-            <h3><span>云端航行模拟飞行交流社区</span></h3>  
+            <h3><span>标题1</span></h3>  
             <p>快来领取你的<span>账号</span>吧</p>   
             <img src="./images/2.png" alt="">
             <p>没有账号?</p>
@@ -56,7 +56,7 @@
     <div class="footer">
         <footer>
             <p>本注册系统制作版权归yido酱_official所有</p>
-            <p>授权使用方：云端航行模拟飞行交流社区</p>
+            <p>授权使用方：标题1</p>
             <p>托管方：yido酱_official</p>
         </footer>
     </div>
@@ -76,7 +76,7 @@ if (empty($post))
 
 
 //验证码区域
-    if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
+/*    if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
         if (strstr($_POST['g-recaptcha-response'] , " " )) {
             alert("it has problem");
             return;
@@ -99,6 +99,7 @@ if (empty($post))
             alert("code:6886_unseccess message:Are You human?");
             return;
         }
+*/
 // 验证区域
     if ( $post['acc'] == null) {
         if ( $post['acc_log'] == null) {
