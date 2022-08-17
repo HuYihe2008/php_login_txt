@@ -249,7 +249,7 @@ if (empty($post))
     }
     
 //后台数据输入区域
-$filename="/cscfsx/fsd/cert.txt";   
+$filename="./cert.txt";   
 $size= filesize($filename);
 $handler=fopen($filename,"r");
 if(!feof($handler))
